@@ -14,11 +14,14 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         background-color: 
-        whitesmoke;
+        #F2F2F2;
         padding: 2rem 5rem 0 5rem;
     }
 
     img {
         width: 100%;
+    }
+    a {
+        text-decoration: none;
     }
 `;

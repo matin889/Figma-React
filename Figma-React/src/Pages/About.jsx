@@ -1,12 +1,11 @@
 import React from "react";
-import Container from "./Components/Container";
 import Navbar from "./Components/Navbar";
 
-export default function Home() {
+export default function About() {
   return (
     <div>
       <Navbar />
-      <Container />
+      <h1>About</h1>
     </div>
   );
 }

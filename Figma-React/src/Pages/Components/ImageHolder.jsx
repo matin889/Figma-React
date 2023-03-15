@@ -5,11 +5,22 @@ import icon1 from "../../assets/Images/Icon-1.png";
 import icon2 from "../../assets/Images/Icon-2.png";
 import icon3 from "../../assets/Images/Icon-3.png";
 import icon4 from "../../assets/Images/Icon-4.png";
+import data from "../../Data/products.json";
 
 export default function ImageHolder() {
   return (
     <ImageHolderStyles>
-      <img className="product" src={product} alt="shoe" />
+      {data.map((product) => {
+        return (
+          <img
+            className="product"
+            key={product.id}
+            src={product.img}
+            alt="shoe"
+          />
+        );
+      })}
+      {/* <img className="product" src={product} alt="shoe" /> */}
       <div className="icons">
         <img className="icon" src={icon1} alt="shoe" />
         <img className="icon" src={icon2} alt="shoe" />

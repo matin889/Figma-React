@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ImageHolderStyles = styled.div`
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;

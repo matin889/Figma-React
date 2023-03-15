@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const DataHolderStyles = styled.div`
-  border: 2px solid green;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding: 1rem;
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
   .company {
     width: 44.5rem;
     height: 1.6rem;
@@ -33,5 +33,71 @@ export const DataHolderStyles = styled.div`
     font-weight: 400;
     line-height: 2.6rem;
     color: #69707d;
+  }
+  .price-details {
+    display: flex;
+
+    gap: 1rem;
+  }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  .add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 27.2rem;
+    height: 5.6rem;
+    background-color: #ff7e1b;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.984rem;
+    color: #ffffff;
+  }
+
+  .basket {
+    width: 1.746rem;
+    height: 1.6rem;
+    color: #ffffff;
+  }
+  .cart {
+    background: #ff7e1b;
+    border: none;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.984rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .quantity {
+    width: 15.7rem;
+    height: 5.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f6f8fd;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.984rem;
+    color: #000000;
+  }
+
+  .quantity > button {
+    border: none;
+    background: #f6f8fd;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.984rem;
+    color: #ff7e1b;
+    cursor: pointer;
   }
 `;

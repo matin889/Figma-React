@@ -34,6 +34,9 @@ export default function Navbar() {
       <div className="cart">
         <a href="#">
           <img className="basket" src={basket} alt="Basket" />
+          <div className="cart-quantity">
+            <input className="update-amount" type="text" value="0" />
+          </div>
         </a>
         <a href="#">
           <img className="user" src={user} alt="User" />

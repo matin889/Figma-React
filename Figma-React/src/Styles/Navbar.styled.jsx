@@ -42,11 +42,36 @@ export const Navigation = styled.nav`
     gap: 4.618rem;
   }
   .basket {
+    position: relative;
     width: 2.2rem;
     height: 2rem;
+    overflow: hidden;
+  }
+  .cart-quantity {
+    position: absolute;
+    margin-top: -2.8rem;
+    margin-left: 0.8rem;
+    border: none;
+    width: 1.9rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .update-amount {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #ff7e1b;
+    color: #ffffff;
+    text-align: center;
   }
   .user {
+    border: 2px solid #ff7e1b;
     width: 5rem;
     height: 5rem;
+    border-radius: 50%;
   }
 `;

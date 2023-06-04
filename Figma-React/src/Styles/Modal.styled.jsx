@@ -84,6 +84,10 @@ export const ModalStyle = styled.div`
     border-radius: 10%;
     margin-right: 10px;
   }
+  .bin {
+    width: 20px;
+    height: 24px;
+  }
 
   .cart-item-details {
     flex-grow: 1;

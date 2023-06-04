@@ -5,7 +5,7 @@ import user from "../../assets/Images/creator.png";
 import { Navigation } from "../../Styles/Navbar.styled";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ toggleCart, cartLength }) {
   return (
     <Navigation>
       <div className="menu">
@@ -33,13 +33,18 @@ export default function Navbar() {
       </div>
       <div className="cart">
         <a href="#">
-          <img className="basket" src={basket} alt="Basket" />
+          <img
+            className="basket"
+            src={basket}
+            alt="Basket"
+            onClick={toggleCart}
+          />
           <div className="cart-quantity">
-            <input className="update-amount" type="text" value="0" />
+            <span className="update-amount">{cartLength}</span>
           </div>
         </a>
         <a href="#">
-          <img className="user" src={user} alt="User" />
+          <img className="user" src={user} alt="User" onClick={toggleCart} />
         </a>
       </div>
     </Navigation>

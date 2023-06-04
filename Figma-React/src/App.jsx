@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useReducer } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { GlobalStyle } from "./Styles/Global.styled";

@@ -6,7 +6,7 @@ import Navbar from "./Components/Navbar";
 export default function Collections() {
   return (
     <Wrapper>
-      <Navbar />
+      {/* <Navbar cartLength={cart.length} /> */}
       <Container />
     </Wrapper>
   );
